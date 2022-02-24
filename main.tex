@@ -1,0 +1,182 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[top=0.75in, bottom=0.2in, left=0.35in, right=0.35in]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{enumitem}
+\usepackage{palatino}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{emoji}
+\usepackage{fontawesome}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+
+\fontfamily{SansSerif}
+\selectfont
+
+\usepackage[T1]{fontenc}
+\usepackage
+%[ansinew]
+[utf8]
+{inputenc}
+
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.82}
+\textheight=9.75in
+\raggedbottom
+
+\setlength{\tabcolsep}{0in}
+\newcommand{\isep}{-2 pt}
+\newcommand{\lsep}{-0.5cm}
+\newcommand{\psep}{-0.6cm}
+\renewcommand{\labelitemii}{$\circ$}
+
+\pagestyle{empty}
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\github}{\faGithubSquare}
+\newcommand{\linkedin}{\faLinkedinSquare}
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\small \colorbox{mygrey}{\begin{minipage}{0.99\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[3]{
+\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
+	\textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
+\end{tabular*}\vspace{-8pt}}
+%-----------------------------------------------------------
+
+\begin{document}
+% Blank white space for the header to be added by placement team
+%   \hspace{0.1em}\\ % also use up a newline
+%   \vspace{2.7cm}\\ % the remaining free space.
+
+% Dummy header is written here, just for example  in between the tags:  \iffalse and \fi .. 
+% \iffalse 
+\begin{table}
+    % \begin{minipage}{0.15\linewidth}
+    %     \centering
+    %     \includegraphics[height =0.8in]{}
+    % \end{minipage}
+    \begin{minipage}{1.0\linewidth}
+        \centering
+        % \setlength{\tabcolsep}{70pt}
+        % \def\arraystretch{1.15}
+        \begin{tabular}{ll}
+            \textbf{\Large{Vidushi Agarwal}}  \\
+            \textbf{Software Engineer, Paypal} \\
+      
+           
+       
+        \end{tabular}
+       
+    \end{minipage}\hfill
+    \\[0.5cm]
+        \href{https://agvidushi.github.io//}{\faPaperclip\ Website} &
+             \href{https://www.linkedin.com/in/vidushi-agarwal/}{\faLinkedin\ LinkedIn} &
+             \href{https://github.com/vidushi-agarwal}{\faGithub\ GitHub} & 
+             \href{https://medium.com/@vidushiagarwal1997}{\faMedium\ Medium}   \hfill
+             \href{mailto:vidushiagarwal1997@gmail.com}{\faEnvelope\ Email} &
+             {\faPhone\ 8630230419} &
+             {\faMapMarker\ Bangalore}
+\end{table}    
+
+\setlength{\tabcolsep}{25pt}
+\begin{table}
+\centering
+\begin{tabular}{llllll}
+\toprule
+\textbf{Examination}   & \textbf{Institute}    & \textbf{Year}     & \textbf{CPI/\%} \\ 
+\toprule
+Graduation  & Thapar Institute of Engineering \& Technology  & 2016-20   & 8.8\\ 
+Intermediate/+2   & St.Mary's School & 2013-15       & 92    \\ 
+Matriculation     & St.Mary's School    & 2012          & 94   \\
+\bottomrule \\[-0.75cm]
+\end{tabular}
+\end{table}
+% \fi
+
+\noindent\resheading{\textbf{SKILLS}}\\[-0.5cm]
+ \begin{itemize}
+  \item \textbf{Languages}:Java, Javascript, Python, HTML, CSS\\[-0.6cm]
+  \item \textbf{Tools}: Git, Jenkins, Jupyter, Pandas Library, Django, ReactJS, SpringBoot, SQL\\[-0.5cm]
+  \end{itemize}
+  
+  
+\noindent \resheading{\textbf{WORK EXPERIENCE}}\\[-0.2cm]
+\begin{itemize}[noitemsep,nolistsep]
+\item \textbf{Paypal, Bangalore} \\
+\emph{Software Engineer} \hfill \emph{(Jun'21-Present)}\\[-0.4cm]
+    \begin{itemize}[noitemsep,nolistsep]
+        \item Working to create Global Merchant Lending, a platform where Paypal merchants can get ticket loans in minutes at afforadable interest rates and repay using sales
+        \item Working on the backend of the PPWC app, E2E testing  and production push.\\[-0.4cm]
+
+    \end{itemize}
+    
+\item \textbf{JP Morgan Chase \& Co., Bangalore}  \\
+    % \begin{itemize}[noitemsep,nolistsep]
+ \emph{Software Engineer} \hfill \emph{(Aug'20-Jun'21)} 
+    \begin{itemize}[noitemsep,nolistsep]
+        \item Worked on creating dashboard which runs batches of checks on daily basis to check any anomalous behaviour for Risk Team
+        \item Used Spring Boot and React JS. Added export feature of timely reports which made tracking validation breaks easy.
+    \end{itemize}
+\emph{Software Engineer Intern} \hfill \emph{(Jan'20-Jul'20)}
+    \begin{itemize}[noitemsep,nolistsep]
+        \item Worked on automating Outlier Detection in Financial Dataset using Supervised Machine Learning algorithms namely Random Forest, Logistic Regression \\[-0.2cm]
+    \end{itemize} 
+    % \end{itemize}
+
+
+\end{itemize}
+
+\noindent
+\resheading{\textbf{PROJECTS} }\\[-0.2cm]
+\begin{itemize}[noitemsep,nolistsep]
+\item \textbf{Musiclean(Corona Care)}, \emph{(Independent Project)}
+\hfill \emph{(July’20)} \\[-0.4cm]
+\begin{itemize}[noitemsep,nolistsep]
+    \item The Django based tool will turn any Song into 40 sec handwashing jingle. It has been used for 200+ posters
+    \item \url{https://musiclean.herokuapp.com/}
+    \item \emph{Tools Used} : Django, Pillow, Cloudinary, Git, Heroku \\[-0.4cm]
+\end{itemize}
+    
+\item \textbf{Thapar Mess Bot}, \emph{(Independent Project)}\hfill \emph{(July’19-Nov'19)} \\[-0.4cm]
+\begin{itemize}[noitemsep,nolistsep]
+    \item Certified by Google Assistant, it details the mess menu for Thapar hostels.
+    \item In English and Hindi, with 100+ active users.
+    \item Accessible from Telegram, Messenger and Google Assistant
+    \item \emph{Tools Used} : DialogFlow, Heroku, Python 3.6.4 \\[-0.2cm]
+\end{itemize}
+
+\end{itemize}
+
+\noindent
+\resheading{\textbf{EXTRA-CURRICULARS}}\\[-0.2cm]
+\begin{itemize}[noitemsep,nolistsep]
+\item \textbf{Hackathons}
+\begin{itemize}[noitemsep,nolistsep]
+        \item among winners of Github Action Hackathon'20
+        \item Won the title of 'Best Open Source Project' for 'Musiclean' in MLH Hackathon'20 by Github
+        \item successfully created ' Peer to Peer Lending' for Paypal Credit Hackathon'21
+        \item successfully submitted 'NFT Ticketing System' for Paypal HackTheBlocks'21
+        \\[-0.4cm]
+        
+    \end{itemize} 
+ \item \textbf{Coding Competition} Won 'Tech That'19', a coding competition by American Express \\[-0.4cm]
+  \item \textbf{Model United Nations} Bagged 'Best Reporter' and 'Special Mentions' for designation of Reporter in International Press. \\[-0.2cm]
+
+\end{itemize}
+
+\noindent
+\resheading{\textbf{POSITIONS OF RESPONSIBILITY}}\\[-0.4cm]
+\begin{itemize}
+\setlength\itemsep{-0.4em}
+\item \textbf{Mentor} mentored to represent Tensorflow at Google Code In'2019 and Girl Script Summer of Code'2019 
+ \item \textbf{Non Profits} mentored rural students through Bhoomi and Isha Vidhya Foundation.
+
+
+\end{itemize}
+
+
+\end{document}
